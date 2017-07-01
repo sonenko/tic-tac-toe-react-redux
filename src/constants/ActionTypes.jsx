@@ -1,0 +1,2 @@
+export const BOARD_NEXT_TURN = 'BOARD_NEXT_TURN';
+export const BOARD_NEW_GAME = 'BOARD_NEW_GAME';

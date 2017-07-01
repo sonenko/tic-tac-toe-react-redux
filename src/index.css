@@ -1,0 +1,39 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  color: #353535;
+}
+
+.game {
+  margin-top: 30px;
+}
+
+.game button {
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 100%;
+  margin-top: 10px;
+}
+
+.game-header {
+  height: 80px;
+  text-align: center;
+}
+
+.game-table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.game-table td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #353535;
+  text-align: center;
+  cursor: pointer;
+}
+
+.game-table td:hover {
+  background-color: #f5f5f5;
+}
+
+

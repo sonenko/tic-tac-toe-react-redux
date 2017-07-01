@@ -1,25 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import injectTapEventPlugin from "react-tap-event-plugin";
-import "./styles.scss";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import board from "./reducers/board";
-import {createStore} from "redux";
-import Game from "./Game";
+import React from 'react';
+import { render } from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import App from './containers/App';
+import reducer from './reducers';
+import './index.css';
 
-injectTapEventPlugin();
+const store = createStore(reducer);
 
-const store = createStore(board);
-const rootEl = document.getElementById(`app`);
-
-const render = () => ReactDOM.render(
-    <MuiThemeProvider>
-        <Game st={store.getState()} dispatch={store.dispatch}/>
-    </MuiThemeProvider>,
-    rootEl
-);
-
-render();
-store.subscribe(render);
-
-
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)

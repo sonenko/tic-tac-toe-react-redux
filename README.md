@@ -1,16 +1,17 @@
-### Setup
-```
-npm i
-```
+#### Initial structure created with
+https://github.com/facebookincubator/create-react-app
 
-### Run development server `http://localhost:8888/`
+#### Run
 ```
 npm start
 ```
 
-### execute before push to git
+#### Run Tests
+```
+npm test
+```
+
+#### lint
 ```
 npm run lint
 ```
-
-
